@@ -1,41 +1,56 @@
 #include <iostream>
-#include <cmath>
-
 using namespace std;
 
-void file1(){
+string getDay(int dayNum){
+    string dayName;
 
-    string file2;
+    switch(dayNum){
+    case 0:
+        dayName = "sunday";
+        break;
+    case 1:
+        dayName = "monday";
+        break;
+    case 2:
+        dayName = "teusday";
+        break;
+    case 3:
+        dayName = "wednesday";
+        break;
+    case 4:
+        dayName = "thursday";
+        break;
+    case 5:
+        dayName = "friday";
+        break;
+    case 6:
+        dayName = "saturday";
+        break;
 
-    cout << "Are you kidding me? " ;
-    cin >> file2;
-    cout << " how dare you!";
+        default:
+            dayName = "Invalid day number";
 
+    }
 
+    return dayName;
 }
 
 int main()
 {
-    string hello;
-    string luis;
-    string name;
-    string age;
-
-
-    luis = " im Luis by the way";
-    hello = " Hello how are you? ";
-
-    cout << hello << " " << luis << endl;
-    cout << " what is your name? " ;
-    cin >> name;
-    cout << " hello " << name << " how old are you? ";
-    cin >> age;
-    cout << " so you're " << age << " year(s) old" << endl;
-
-    file1();
-
-
-
+    cout << getDay(7);
 
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
