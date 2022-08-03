@@ -4,9 +4,8 @@
 using namespace std;
 
 
-int main()
-{
-    double num1, num2;
+void cal(){
+double num1, num2;
     char tell;
 
     cout << " enter a number: ";
@@ -32,6 +31,13 @@ int main()
     }
 
     cout << result;
+
+}
+
+
+int main()
+{
+    cal();
 
 
 
