@@ -1,6 +1,12 @@
 #include <iostream>
 using namespace std;
 
+
+void stell(){
+
+        string tell = "hello";
+
+
 string getDay(int dayNum){
     string dayName;
 
@@ -27,17 +33,20 @@ string getDay(int dayNum){
         dayName = "saturday";
         break;
 
+
         default:
             dayName = "Invalid day number";
 
     }
 
     return dayName;
+
+    cout << tell();
 }
 
 int main()
 {
-    cout << getDay(7);
+    cout << getDay(2);
 
     return 0;
 }
