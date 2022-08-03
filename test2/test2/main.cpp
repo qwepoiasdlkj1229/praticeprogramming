@@ -4,7 +4,7 @@
 using namespace std;
 
 
-int main(int argc, char** argv)
+int main()
 {
     double num1, num2;
     char tell;
@@ -16,7 +16,7 @@ int main(int argc, char** argv)
     cout << " Another number: ";
     cin >> num2;
 
-    int result;
+    double result;
 
 
     if(tell == '+'){
@@ -30,6 +30,7 @@ int main(int argc, char** argv)
     }   else {
         cout << "ENTER ONLY * - + /";
     }
+
     cout << result;
 
 
