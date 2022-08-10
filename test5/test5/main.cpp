@@ -7,22 +7,22 @@ public:
     string name;
     string user;
     int sharpness;
+    Sword(string aName, string aUser, int aSharpness){
+        name = aName;
+        user = aUser;
+        sharpness = aSharpness;
+    }
 };
 
 
 int main()
 {
-    Sword brokensword;
-    brokensword.name = "Broken sword";
-    brokensword.user = "Luis";
-    brokensword.sharpness = -1;
+    Sword brokensword("Broken sword", "Luis", -1);
 
-    Sword diamondsword;
-    diamondsword.name = "diamond sword";
-    diamondsword.user = "luis";
-    diamondsword.sharpness = 20;
 
-    cout << diamondsword.name;
+   cout << brokensword.name;
+
+
 
 
 

@@ -28,15 +28,18 @@ double num1, num2;
         result = num1 / num2;
     }   else {
         cout << "ENTER ONLY * - + /";
-    }
+
+
+
+
 
     cout << result;
 
 }
 
 
-int main()
-{
+int main(){
+
     cal();
 
 

@@ -11,8 +11,6 @@ int main()
     bool outOfGuesses = false;
 
 
-
-
     for(int i = 4; i != guess && !outOfGuesses;){
         if (guessCount < guessLimit){
         cout <<" Guess the number 1 - 10: ";
@@ -23,9 +21,7 @@ int main()
      }
     }
 
-
-
-    if(outOfGuesses){
+        if(outOfGuesses){
         cout << "You lose!";
     } else{
     cout << "you win!";
