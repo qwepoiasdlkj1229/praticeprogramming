@@ -3,24 +3,40 @@
 using namespace std;
 
 class Sword {
-public:
+
+private:
     string name;
+public:
+
     string user;
     int sharpness;
     Sword(string aName, string aUser, int aSharpness){
         name = aName;
-        user = aUser;
+        setUser(aUser);
         sharpness = aSharpness;
     }
+
+    void setUser(string aUser){
+        if(aUser == "G" || aUser == "PG" || aUser == "NR")
+            user = aUser;
+        }   else {
+            user = "NR";
+        }
+
 };
 
 
 int main()
 {
+
+
+
     Sword brokensword("Broken sword", "Luis", -1);
 
 
-   cout << brokensword.name;
+    Sword.setUser("Luis");
+
+   cout << Sword.user;
 
 
 
